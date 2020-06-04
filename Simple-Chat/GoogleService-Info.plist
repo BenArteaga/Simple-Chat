@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>234652733722-ee26opboolqmkinl08nhohqq45kk5t9u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.234652733722-ee26opboolqmkinl08nhohqq45kk5t9u</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB2APoJYOSaItvXOwHEb5LRLypqZ-XlWXI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>234652733722</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.umich.barteaga.Simple-Chat</string>
+	<key>PROJECT_ID</key>
+	<string>devslopes-chat-f839a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>devslopes-chat-f839a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:234652733722:ios:8dbee02fca380d7c3e9ca3</string>
+	<key>DATABASE_URL</key>
+	<string>https://devslopes-chat-f839a.firebaseio.com</string>
+</dict>
+</plist>
