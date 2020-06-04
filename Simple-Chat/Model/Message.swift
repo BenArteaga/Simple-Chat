@@ -31,4 +31,23 @@ struct Message {
         _userId = messageData["user"] as? String
         _message = messageData["message"] as? String
     }
+    
+    //regular initializer
+    init(messageId: String, userId: String?, message: String?) {
+        _messageId = messageId
+        _userId = userId
+        _message = message
+    }
+    
+    static func messageArrayFromFBData(_ fbData: AnyObject) -> [Message] {
+        var messages = [Message]()
+        if let formatted = fbData as? Dictionary<String, AnyObject> {
+            for (key, messageObj) in formatted {
+                let obj = messageObj as! Dictionary<String, AnyObject>
+                let message = Message(messageId: key, messageData: obj as Dictionary<String, AnyObject>)
+                messages.append(message)
+            }
+        }
+        return messages
+    }
 }
