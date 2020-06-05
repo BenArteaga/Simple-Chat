@@ -10,7 +10,6 @@
 		7D5A32BB977FB9D14A81D972 /* Pods_Simple_ChatTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF43CDA411391127B411D658 /* Pods_Simple_ChatTests.framework */; };
 		85636362248802890097484A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85636361248802890097484A /* AppDelegate.swift */; };
 		85636364248802890097484A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85636363248802890097484A /* SceneDelegate.swift */; };
-		85636366248802890097484A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85636365248802890097484A /* ViewController.swift */; };
 		85636369248802890097484A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85636367248802890097484A /* Main.storyboard */; };
 		8563636B2488028C0097484A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8563636A2488028C0097484A /* Assets.xcassets */; };
 		8563636E2488028C0097484A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8563636C2488028C0097484A /* LaunchScreen.storyboard */; };
@@ -19,6 +18,8 @@
 		8563638A248809080097484A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85636389248809080097484A /* AuthService.swift */; };
 		8563638C248968250097484A /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8563638B248968250097484A /* DataService.swift */; };
 		8563638E248969330097484A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8563638D248969330097484A /* Message.swift */; };
+		85636390248A99100097484A /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8563638F248A99100097484A /* SignInVC.swift */; };
+		85636392248A99A00097484A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85636391248A99A00097484A /* MainVC.swift */; };
 		E3BC5C48836E0B2EC0CE3CC8 /* Pods_Simple_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894F67DDD121E89C5BFF92EC /* Pods_Simple_Chat.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +40,6 @@
 		8563635E248802890097484A /* Simple-Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simple-Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		85636361248802890097484A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85636363248802890097484A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85636365248802890097484A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		85636368248802890097484A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8563636A2488028C0097484A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8563636D2488028C0097484A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		85636389248809080097484A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		8563638B248968250097484A /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		8563638D248969330097484A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		8563638F248A99100097484A /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		85636391248A99A00097484A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		894F67DDD121E89C5BFF92EC /* Pods_Simple_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B387564C984F2E0E1D480504 /* Pods-Simple-ChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-ChatTests.release.xcconfig"; path = "Target Support Files/Pods-Simple-ChatTests/Pods-Simple-ChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF43CDA411391127B411D658 /* Pods_Simple_ChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_ChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +108,6 @@
 				85636383248807D80097484A /* GoogleService-Info.plist */,
 				85636361248802890097484A /* AppDelegate.swift */,
 				85636363248802890097484A /* SceneDelegate.swift */,
-				85636365248802890097484A /* ViewController.swift */,
 				85636367248802890097484A /* Main.storyboard */,
 				8563636A2488028C0097484A /* Assets.xcassets */,
 				8563636C2488028C0097484A /* LaunchScreen.storyboard */,
@@ -151,6 +152,8 @@
 		85636388248808A30097484A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8563638F248A99100097484A /* SignInVC.swift */,
+				85636391248A99A00097484A /* MainVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -344,12 +347,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85636366248802890097484A /* ViewController.swift in Sources */,
 				85636362248802890097484A /* AppDelegate.swift in Sources */,
 				85636364248802890097484A /* SceneDelegate.swift in Sources */,
+				85636390248A99100097484A /* SignInVC.swift in Sources */,
 				8563638E248969330097484A /* Message.swift in Sources */,
 				8563638A248809080097484A /* AuthService.swift in Sources */,
 				8563638C248968250097484A /* DataService.swift in Sources */,
+				85636392248A99A00097484A /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

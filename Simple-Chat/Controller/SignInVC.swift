@@ -1,20 +1,17 @@
 //
-//  ViewController.swift
+//  SignInVC.swift
 //  Simple-Chat
 //
-//  Created by Ben Arteaga on 6/3/20.
+//  Created by Ben Arteaga on 6/5/20.
 //  Copyright © 2020 Ben Arteaga. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SignInVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
 }
-

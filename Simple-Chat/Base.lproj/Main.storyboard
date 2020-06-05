@@ -1,24 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="Simple_Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Simple Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlZ-oG-SWf">
+                                <rect key="frame" x="130" y="53" width="154" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="154" id="D7D-aA-MSi"/>
+                                    <constraint firstAttribute="height" constant="37" id="WW9-LH-sNn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGU-3t-8Vy">
+                                <rect key="frame" x="74.5" y="124" width="265" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="TFy-vR-5l2"/>
+                                    <constraint firstAttribute="height" constant="34" id="qI5-ar-WJa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nGs-hL-gwL">
+                                <rect key="frame" x="74.5" y="175" width="265" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="Q9i-2C-gdY"/>
+                                    <constraint firstAttribute="height" constant="34" id="k0T-7r-n93"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhN-Bq-7yg">
+                                <rect key="frame" x="150" y="249" width="114" height="36"/>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.65098039215686276" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="JiO-p0-7Vf"/>
+                                    <constraint firstAttribute="width" constant="114" id="Tad-ug-Ik3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                <state key="normal" title="Sign In/Up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.69803921568627447" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nGs-hL-gwL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5hA-YJ-bKj"/>
+                            <constraint firstItem="QlZ-oG-SWf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LWC-Qd-me0"/>
+                            <constraint firstItem="JhN-Bq-7yg" firstAttribute="top" secondItem="nGs-hL-gwL" secondAttribute="bottom" constant="40" id="TDU-Nh-GMw"/>
+                            <constraint firstItem="JhN-Bq-7yg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="i87-eb-sTH"/>
+                            <constraint firstItem="QlZ-oG-SWf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="pGg-5z-HEy"/>
+                            <constraint firstItem="SGU-3t-8Vy" firstAttribute="top" secondItem="QlZ-oG-SWf" secondAttribute="bottom" constant="34" id="s7Y-0V-S8P"/>
+                            <constraint firstItem="SGU-3t-8Vy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xhE-Kv-2Ga"/>
+                            <constraint firstItem="nGs-hL-gwL" firstAttribute="top" secondItem="SGU-3t-8Vy" secondAttribute="bottom" constant="17" id="xvA-CH-BhY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Pgq-em-ajk"/>
+                    <connections>
+                        <segue destination="qsg-dZ-AB6" kind="show" identifier="showMainVC" id="8vH-sg-pxA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="9bC-pa-jV2">
+            <objects>
+                <viewController id="qsg-dZ-AB6" customClass="MainVC" customModule="Simple_Chat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e1Y-p3-8La">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="oBh-TM-b2n"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="si8-xt-5Wg"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showSignInVC" id="8JK-gL-Cyo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QvP-Y8-tSM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="118"/>
         </scene>
     </scenes>
 </document>

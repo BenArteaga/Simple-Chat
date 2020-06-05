@@ -17,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        //ensures data gets downloaded on application launch and updates as necessary
+        DataService.instance.loadMessages({Success in
+            if !Success {
+                print("Load Firebase data failed")
+            }
+            else {
+                print("Success!")
+            }
+        })
         return true
     }
 
