@@ -20,6 +20,7 @@
 		8563638E248969330097484A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8563638D248969330097484A /* Message.swift */; };
 		85636390248A99100097484A /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8563638F248A99100097484A /* SignInVC.swift */; };
 		85636392248A99A00097484A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85636391248A99A00097484A /* MainVC.swift */; };
+		85F108CF248DA897002D1B69 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F108CE248DA897002D1B69 /* MessageCell.swift */; };
 		E3BC5C48836E0B2EC0CE3CC8 /* Pods_Simple_Chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894F67DDD121E89C5BFF92EC /* Pods_Simple_Chat.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		8563638D248969330097484A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		8563638F248A99100097484A /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		85636391248A99A00097484A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		85F108CE248DA897002D1B69 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		894F67DDD121E89C5BFF92EC /* Pods_Simple_Chat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_Chat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B387564C984F2E0E1D480504 /* Pods-Simple-ChatTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple-ChatTests.release.xcconfig"; path = "Target Support Files/Pods-Simple-ChatTests/Pods-Simple-ChatTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF43CDA411391127B411D658 /* Pods_Simple_ChatTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_ChatTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 		856363872488089B0097484A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				85F108CE248DA897002D1B69 /* MessageCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85636362248802890097484A /* AppDelegate.swift in Sources */,
+				85F108CF248DA897002D1B69 /* MessageCell.swift in Sources */,
 				85636364248802890097484A /* SceneDelegate.swift in Sources */,
 				85636390248A99100097484A /* SignInVC.swift in Sources */,
 				8563638E248969330097484A /* Message.swift in Sources */,
