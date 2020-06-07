@@ -105,6 +105,9 @@
                                         <state key="normal" title="Log Out">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="logOutButtonTapped:" destination="qsg-dZ-AB6" eventType="touchUpInside" id="dMO-dm-BCd"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.69803921570000005" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -165,6 +168,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendButtonTapped:" destination="qsg-dZ-AB6" eventType="touchUpInside" id="iOH-yB-sx4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -189,6 +195,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="si8-xt-5Wg"/>
                     <connections>
+                        <outlet property="messageTextField" destination="9uy-YD-BHm" id="exT-cA-5bi"/>
+                        <outlet property="tableView" destination="Bb2-eG-FgU" id="8p7-SX-9kP"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="showSignInVC" id="8JK-gL-Cyo"/>
                     </connections>
                 </viewController>
