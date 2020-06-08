@@ -11,8 +11,8 @@ import Firebase
 
 class MainVC: UIViewController {
 
+    @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
-    @IBOutlet weak var messageTextField: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

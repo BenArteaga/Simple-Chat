@@ -92,7 +92,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7c-0y-RGb">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k7c-0y-RGb" customClass="HeaderView" customModule="Simple_Chat" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1b-V9-yf2">
@@ -125,7 +125,7 @@
                                     <constraint firstAttribute="height" constant="655" id="n5f-Yz-g63"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="116" id="78a-m2-4Yn">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" rowHeight="116" id="78a-m2-4Yn" customClass="MessageCell" customModule="Simple_Chat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="116"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="78a-m2-4Yn" id="YXw-pe-qCT">
@@ -148,6 +148,10 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="messageLabel" destination="9uy-YD-BHm" id="kC9-GG-uNm"/>
+                                            <outlet property="userLabel" destination="uHe-11-YcU" id="lxe-xn-3Om"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -195,7 +199,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="si8-xt-5Wg"/>
                     <connections>
-                        <outlet property="messageTextField" destination="9uy-YD-BHm" id="exT-cA-5bi"/>
+                        <outlet property="messageTextField" destination="SBF-oE-gR7" id="z74-x7-tKk"/>
                         <outlet property="tableView" destination="Bb2-eG-FgU" id="8p7-SX-9kP"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="showSignInVC" id="8JK-gL-Cyo"/>
                     </connections>
