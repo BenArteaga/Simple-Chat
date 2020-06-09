@@ -56,6 +56,7 @@ class MainVC: UIViewController {
     @IBAction func logOutButtonTapped(_ sender: UIButton) {
         do {
             try Firebase.Auth.auth().signOut()
+            AuthService.instance.isLoggedIn = false
             performSegue(withIdentifier: "showSignInVC", sender: nil)
         } catch {
             print("An error occured signing out")
