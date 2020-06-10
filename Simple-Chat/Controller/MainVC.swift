@@ -33,18 +33,18 @@ class MainVC: UIViewController {
     
     //moves the entire view up by the size of the keyboard
     @objc func keyboardWillShow(notif: NSNotification) {
-        if let keyboardSize = (notif.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardSize = (notif.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= (keyboardSize.height + 20)
+                self.view.frame.origin.y -= (keyboardSize.height + 16)
             }
         }
     }
     
     //shifts the entire view down by the size of the keyboard
     @objc func keyboardWillHide(notif: NSNotification) {
-        if let keyboardSize = (notif.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+        if let keyboardSize = (notif.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y != 0 {
-                self.view.frame.origin.y += (keyboardSize.height + 20)
+                self.view.frame.origin.y += (keyboardSize.height + 16)
             }
         }
     }

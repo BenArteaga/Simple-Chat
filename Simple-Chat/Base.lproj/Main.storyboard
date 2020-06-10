@@ -156,9 +156,9 @@
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SBF-oE-gR7">
-                                <rect key="frame" x="20" y="760.5" width="315" height="34"/>
+                                <rect key="frame" x="60" y="760.5" width="275" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="315" id="VnZ-7y-RqT"/>
+                                    <constraint firstAttribute="width" constant="275" id="VnZ-7y-RqT"/>
                                     <constraint firstAttribute="height" constant="34" id="szu-Iw-q3F"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
