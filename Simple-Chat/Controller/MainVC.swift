@@ -113,7 +113,11 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource {
         let msg = DataService.instance.messages[(indexPath as NSIndexPath).row]
         if let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell") as? MessageCell {
             if let user = msg.userId, let message = msg.message {
-                cell.configureCell(user: user, message: message)
+                var isUser = false
+                if AuthService.instance.username == user {
+                    isUser = true
+                }
+                cell.configureCell(user: user, message: message, isSelf: isUser)
             }
             return cell
         }

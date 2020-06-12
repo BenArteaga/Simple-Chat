@@ -20,9 +20,12 @@ class MessageCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configureCell(user: String, message: String) {
+    func configureCell(user: String, message: String, isSelf: Bool) {
         userLabel.text = user
         messageLabel.text = message
+        if isSelf {
+            messageLabel.textAlignment = .right
+        }
     }
 
 }
